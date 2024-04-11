@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "baotintucs",
+  "info": {
+    "singularName": "baotintuc",
+    "pluralName": "baotintucs",
+    "displayName": "baotintuc",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "loaibao": {
+      "type": "text"
+    },
+    "thoigianloaibao": {
+      "type": "datetime"
+    },
+    "tieude": {
+      "type": "string"
+    },
+    "thongtinlienquan": {
+      "type": "richtext",
+      "required": false
+    },
+    "chitiethinhanh": {
+      "type": "text"
+    },
+    "phanloai": {
+      "type": "json"
+    },
+    "picture": {
+      "type": "string"
+    },
+    "binhluan": {
+      "type": "json"
+    },
+    "tacgiabaibao": {
+      "type": "string"
+    }
+  }
+}

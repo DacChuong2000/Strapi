@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kinhdoanhd",
+  "info": {
+    "singularName": "kinhdoanh",
+    "pluralName": "kinhdoanhd",
+    "displayName": "kinhdoanh"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kinhdoanh1": {
+      "type": "string"
+    },
+    "kinhdoanh2": {
+      "type": "string"
+    },
+    "kinhdoanh3": {
+      "type": "string"
+    }
+  }
+}
