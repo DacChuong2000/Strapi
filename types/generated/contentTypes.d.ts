@@ -401,62 +401,29 @@ export interface ApiBaotintucBaotintuc extends Schema.CollectionType {
   };
 }
 
-export interface ApiKinhdoanhKinhdoanh extends Schema.CollectionType {
-  collectionName: 'kinhdoanhd';
+export interface ApiTintuchoatdongTintuchoatdong extends Schema.CollectionType {
+  collectionName: 'tintuchoatdongs';
   info: {
-    singularName: 'kinhdoanh';
-    pluralName: 'kinhdoanhd';
-    displayName: 'kinhdoanh';
+    singularName: 'tintuchoatdong';
+    pluralName: 'tintuchoatdongs';
+    displayName: 'tintuchoatdong';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    kinhdoanh1: Attribute.String;
-    kinhdoanh2: Attribute.String;
-    kinhdoanh3: Attribute.String;
+    tieude: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::kinhdoanh.kinhdoanh',
+      'api::tintuchoatdong.tintuchoatdong',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::kinhdoanh.kinhdoanh',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiProductProduct extends Schema.CollectionType {
-  collectionName: 'products';
-  info: {
-    singularName: 'product';
-    pluralName: 'products';
-    displayName: 'product';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String;
-    price: Attribute.Float;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::product.product',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::product.product',
+      'api::tintuchoatdong.tintuchoatdong',
       'oneToOne',
       'admin::user'
     > &
@@ -901,8 +868,7 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::baotintuc.baotintuc': ApiBaotintucBaotintuc;
-      'api::kinhdoanh.kinhdoanh': ApiKinhdoanhKinhdoanh;
-      'api::product.product': ApiProductProduct;
+      'api::tintuchoatdong.tintuchoatdong': ApiTintuchoatdongTintuchoatdong;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;

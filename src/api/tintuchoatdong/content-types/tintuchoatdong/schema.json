@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tintuchoatdongs",
+  "info": {
+    "singularName": "tintuchoatdong",
+    "pluralName": "tintuchoatdongs",
+    "displayName": "tintuchoatdong"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tieude": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
